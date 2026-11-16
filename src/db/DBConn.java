@@ -31,13 +31,13 @@ public class DBConn {
     }
 
     // DB 연결을 종료하는 작업
-    public static void close() {
-        if(dbConn != null) {
+    public static void close(){
+        if (dbConn != null) {
             try {
                 if (! dbConn.isClosed()) {
                     dbConn.close();
                 }
-            } catch (Exception e) {
+            } catch (Exception e){
                 System.out.println(e.getMessage());
             }
             dbConn = null;

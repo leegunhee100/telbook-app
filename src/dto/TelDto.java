@@ -10,9 +10,11 @@ public class TelDto {
     @Override
     public String toString() {
         if (getId() == 0) {
-            return String.format("이름 : %s / 나이 : %d / 주소 : %s / 전화 : %s", name, age, address, phone);
+            return String.format("이름: %s / 나이: %d / 주소: %s / 전화: %s",
+                    name, age, address, phone);
         }
-        return String.format("ID : %d / 이름 : %s / 나이 : %d / 주소 : %s / 전화 : %s", name, age, address, phone);
+        return String.format("ID: %d / 이름: %s / 나이: %d / 주소: %s / 전화: %s",
+                id, name, age, address, phone);
     }
 
     public int getId() {
